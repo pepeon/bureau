@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: #fff
+  background: $light-gray;
 }
 
 .container {
@@ -16,11 +16,16 @@ body {
 p,
 a,
 button {
-  color: #000;
+  color: $gray;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
