@@ -1,13 +1,16 @@
 @charset "UTF-8";
 
-@import 'reset';
-@import 'variables';
-@import 'fonts';
-@import 'mixins';
-@import 'core';
+@use "core";
+@use "reset";
+@use "variables";
+@use "fonts";
+@use "mixins";
 
-@import 'blocks/intro.scss';
-@import 'blocks/features.scss';
-@import 'blocks/roadmap.scss';
-@import 'blocks/pricingPlans.scss';
-@import 'blocks/footer.scss';
+@use "./blocks/intro";
+@use "./blocks/video";
+@use "./blocks/advantages";
+@use "./blocks/features";
+@use "./blocks/contact";
+@use "./blocks/footer";
+@use "./blocks/form";
+@use "./blocks/media";

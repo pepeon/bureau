@@ -1,0 +1,120 @@
+.form-container {
+  display: none;
+  position: fixed;
+  max-height: 95%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  z-index: 10;
+}
+.form__close-btn {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 18px;
+  height: 18px;
+}
+
+.form_input-file {
+  display: none;
+}
+
+.form__doc {
+  display: none;
+  padding-right: 10px;
+}
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+
+  .privacy-policy {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 131%;
+    color: #614d49;
+
+    span {
+      text-decoration: underline;
+    }
+  }
+  .form__btn {
+    background: #cfcfcf;
+    width: 175px;
+    height: 44px;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: #614d49;
+    padding: 0;
+    margin: 0;
+  }
+}
+.form-container h2 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 127%;
+  color: #311311;
+}
+.form-container .form__btn:hover {
+  background-color: #b21f24;
+}
+.form__file {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  color: #614d49;
+  border-bottom: 1px solid #614d49;
+  padding-bottom: 15px;
+
+  .file-info {
+    flex: 1;
+  }
+}
+
+.form__project {
+  resize: none;
+  height: 24px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+.form__name,
+.form__email,
+.form__phone,
+.form__project {
+  border: none;
+  border-bottom: 1px solid #614d49;
+  padding-bottom: 15px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  color: #614d49;
+}
+.form__block {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}

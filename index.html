@@ -3,231 +3,436 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Analytics</title>
+    <script src="./js/index.js" defer></script>
   </head>
   <body class="container">
-    <!-- Первый экран - вступление -->
-    <section class="intro-analytics">
-      <div class="wrap wrap-padding">
+    <div class="overlay"></div>
+    <div class="form-container">
+      <form class="form">
+        <button class="form__close-btn btn-connect">
+          <img src="./assets/icons/close.svg" alt="close" />
+        </button>
+        <h2>
+          Успех начинается с правильных решений. Оставьте здесь свои контакты, и
+          мы свяжемся с вами, чтобы предложить оптимальную технологию по
+          увеличению процента извлекаемости полезного в конечный продукт на
+          вашем предприятии.
+        </h2>
+        <input
+          type="text"
+          class="form__name"
+          name="name"
+          required
+          placeholder="Имя*"
+        />
+
+        <input
+          type="email"
+          class="form__email"
+          name="email"
+          required
+          placeholder="E-Mail*"
+        />
+
+        <input
+          type="number"
+          class="form__phone"
+          name="phone"
+          required
+          placeholder="Телефон*"
+        />
+
+        <textarea
+          class="form__project"
+          name="project"
+          autocapitalize="off"
+          autocorrect="off"
+          required
+          placeholder="Описание проекта*"
+        ></textarea>
+        <div class="form__file">
+          <img class="form__doc" src="./assets/icons/doc.svg" alt="doc" />
+          <span class="file-info">Приложить Файлы (До Трех Файлов)</span>
+          <input class="form_input-file" multiple type="file" name="file" />
+          <span class="input-file-btn"></span>
+          <button class="file-upload">
+            <img src="./assets/icons/file.svg" alt="file" />
+          </button>
+        </div>
+
+        <p class="privacy-policy">
+          Отправляя эту форму, я принимаю
+          <span>политику конфиденциальности</span> этого сайта.
+        </p>
+
+        <button class="contact__btn form__btn">
+          <span>Отправить</span>
+          <img src="./assets/icons/arrow.svg" alt="arrow" />
+        </button>
+      </form>
+    </div>
+    <section class="intro">
+      <div class="wrap">
         <header class="header">
-          <a href="#" class="header__logo">
-            <img src="/assets/icons/logo.svg" alt="logo" />
-            <p>Analytics</p>
-          </a>
-          <nav class="header__menu header__menu--adaptive">
-            <ul class="header__menu-list">
-              <li class="header__menu-item"><a href="#">Products</a></li>
-              <li class="header__menu-item"><a href="#">Pricing</a></li>
-              <li class="header__menu-item"><a href="#">FAQ</a></li>
-              <li class="header__menu-item"><a href="#">Blog</a></li>
-              <li class="header__menu-item"><a href="#">Analytics</a></li>
+          <div class="burger__menu">
+            <ul class="burger__list">
+              <li class="header__item">
+                <a href="#" class="header__link"> Товары </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link"> Услуги </a>
+              </li>
+
+              <li class="header__item">
+                <a href="#" class="header__link"> Компания </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link"> Контакты </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link"> EN </a>
+              </li>
             </ul>
-          </nav>
-          <div class="header__btns">
-            <button class="header__btn--transparent">Sign in</button>
-            <button class="header__btn--circled header__menu--adaptive">Sign Up</button>
           </div>
 
-          <div class="header-menu-btn">
-            <input type="checkbox" />
-            <nav class="header__menu header__menu--side">
-              <ul class="header__menu-list">
-                <li class="header__menu-item">
-                  <a href="/" class="header__menu-link">Products</a>
-                </li>
-                <li class="header__menu-item">
-                  <a href="/" class="header__menu-link">Pricing</a>
-                </li>
-                <li class="header__menu-item">
-                  <a href="/" class="header__menu-link">FAQ</a>
-                </li>
-                <li class="header__menu-item">
-                  <a href="/" class="header__menu-link">Blog</a>
-                </li>
-                <li class="header__menu-item">
-                  <a href="/" class="header__menu-link">Analytics</a>
-                </li>
-              </ul>
-            </nav>
+          <div class="header__logo">
+            <a href="./index.html">LOGO</a>
+          </div>
+
+          <div class="header__right">
+            <ul class="header__list">
+              <li class="header__item">
+                <div class="plug"></div>
+                <a class="header__link" href="#">Товары</a>
+
+                <ul class="header__submenu">
+                  <li class="header__submenu-item">
+                    <a class="header__submenu-link" href="#"
+                      >Флотомашины и чаны</a
+                    >
+                  </li>
+
+                  <li class="header__submenu-item">
+                    <a class="header__submenu-link" href="#">Автоматизация</a>
+                  </li>
+                  <li class="header__submenu-item">
+                    <a class="header__submenu-link link--red" href="#"
+                      ><span>SN</span></a
+                    >
+                  </li>
+                  <div class="gray-line"></div>
+                </ul>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Услуги</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Компания</a>
+              </li>
+            </ul>
+            <div class="header__links">
+              <button class="header__link-btn btn-connect">
+                Оставить заявку
+              </button>
+              <div class="header__link-item">Контакты</div>
+              <a class="header__link-search" href="./search.html">
+                <img
+                  src="./assets/icons/search.svg"
+                  width="12"
+                  height="12"
+                  alt="search-logo"
+                />
+              </a>
+              <a class="header__link-lang" href="#">EN</a>
+              <div class="header__burger">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
           </div>
         </header>
 
-        <div class="dashboard">
-          <div class="dashboard__info">
-            <h1 class="dashboard__title">Monitor your business on real-time dashboard</h1>
-            <p class="dashboard__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque
-              volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam.
-            </p>
-            <button class="dashboard__btn">Try for free</button>
-          </div>
-          <div class="dashboard__pictures">
-            <img src="/assets/img/dashboard-small.png" alt="dashboard picture" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Второй экран (основные фичи) -->
-    <section class="main-features wrap wrap-padding">
-      <h2 class="main-features__title">Main Features</h2>
-      <p class="main-features__text-block">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat
-        est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit
-        amet. Id vel in nam malesuada.
-      </p>
-      <div class="main-features__advantages">
-        <div class="main-features__advantage-item">
-          <img src="./assets/icons/monitoring.svg" alt="Monitoring" class="main-features-advantage-icon" />
-          <h3 class="main-features-advantage-title">Monitoring 24/7</h3>
-          <p class="main-features-advantage-desc">
-            Lorem ipsum dolor sit amet, consectetur adipis cing elit. Elementum nisi aliquet volutpat.
-          </p>
-        </div>
-
-        <div class="main-features__advantage-item">
-          <img src="./assets/icons/widgets.svg" alt="Widget" class="main-features-advantage-icon" />
-          <h3 class="main-features-advantage-title">Widget System</h3>
-          <p class="main-features-advantage-desc">
-            Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar.
-          </p>
-        </div>
-
-        <div class="main-features__advantage-item">
-          <img src="./assets/icons/performance.svg" alt="Performance" class="main-features-advantage-icon" />
-          <h3 class="main-features-advantage-title">Best Performance</h3>
-          <p class="main-features-advantage-desc">
-            Lorem ipsum dolor sit amet, consectetur adipis cing elit. Elementum nisi aliquet volutpat.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Третий экран RoadMap -->
-    <section class="roadmap wrap wrap-padding">
-      <div class="roadmap__item">
-        <div class="roadmap__description">
-          <h3 class="roadmap__title">Automated Reports & Widget Alerts</h3>
-          <p class="roadmap__text-block">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque
-            volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus
-            pulvinar sit amet.
-          </p>
-        </div>
-        <div class="roadmap__picture">
-          <img src="./assets/img/screen-01.png" alt="picture roadmap" />
-        </div>
-      </div>
-
-      <div class="roadmap__item roadmap__item--right">
-        <div class="roadmap__description">
-          <h3 class="roadmap__title">Fully customizable to address your needs</h3>
-          <p class="roadmap__text-block">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque
-            volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus
-            pulvinar sit amet.
-          </p>
-        </div>
-        <div class="roadmap__picture">
-          <img src="./assets/img/screen-02.png" alt="picture roadmap" />
-        </div>
-      </div>
-
-      <div class="roadmap__item">
-        <div class="roadmap__description">
-          <h3 class="roadmap__title">Pre-built Dashboard Templates</h3>
-          <p class="roadmap__text-block">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque
-            volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus
-            pulvinar sit amet.
-          </p>
-        </div>
-        <div class="roadmap__picture">
-          <img src="./assets/img/screen-03.png" alt="picture roadmap" />
-        </div>
-      </div>
-    </section>
-
-    <!-- Четвёртый блок Pricing Plans -->
-    <section class="pricing-plans">
-      <div class="wrap wrap-padding">
-        <div class="pricing-plans__description">
-          <h3 class="pricing-plans__title">Pricing Plans</h3>
-          <p class="pricing-plans__text-block">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque
-            volutpat est.
-          </p>
-        </div>
-        <div class="pricing-plans__rates">
-          <div class="rates-item">
-            <h4 class="rates-item__title">Starter</h4>
-            <p class="rates-item__text-block">up to 3 users</p>
-            <p class="rates-item__price"><span class="rates-item__currency">$</span>29</p>
-            <p class="rates-item__subtitle">per mouth</p>
-            <button class="rates-item__order-btn">Order</button>
-          </div>
-
-          <div class="rates-item rates-item--pink">
-            <h4 class="rates-item__title">Starter</h4>
-            <p class="rates-item__text-block">up to 3 users</p>
-            <p class="rates-item__price"><span class="rates-item__currency">$</span>29</p>
-            <p class="rates-item__subtitle">per mouth</p>
-            <button class="rates-item__order-btn">Order</button>
-          </div>
-
-          <div class="rates-item">
-            <h4 class="rates-item__title">Starter</h4>
-            <p class="rates-item__text-block">up to 3 users</p>
-            <p class="rates-item__price"><span class="rates-item__currency">$</span>29</p>
-            <p class="rates-item__subtitle">per mouth</p>
-            <button class="rates-item__order-btn">Order</button>
+        <div class="video-container">
+          <video
+            playsinline
+            autoplay
+            loop
+            muted
+            class="video-template"
+            height="100%"
+            src="./assets/video/51_25_08_19.mp4"
+          >
+            Ваш браузер не поддерживает видео.
+          </video>
+          <div class="btn-container">
+            <div class="btn-contact btn-connect">
+              <button>
+                <span> Связаться с нами </span>
+              </button>
+            </div>
+            <div class="white-line"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Подвал -->
-    <footer class="footer-menu wrap-padding">
-      <div class="footer-menu__wrapper wrap">
-        <div class="footer-menu__logo">
-          <img src="./assets/icons/logo-gray.svg" alt="footer logo" />
-          <p>ANALYTICS</p>
+    <section class="advantages">
+      <div class="wrap">
+        <div class="heading">
+          <div class="advantages__title-main">
+            <h1><span class="line">Lorem Ipsum,</span></h1>
+            <h1><span class="devider">LOREM IPSUM LOREM IPSUM</span></h1>
+          </div>
+          <p class="advantages__info">
+            Lorem Ipsum компании разработано с учётом анализа передовых
+            технологий, использованием лучших решений и их качественной
+            модернизации под потребности конкретного заказчика. Успешная
+            реализация проектов на ведущих предприятиях горно-обогатительной
+            промышленности базируется на многолетнем опыте и высоких
+            компетенциях наших сотрудников.
+          </p>
         </div>
-        <ul class="footer-menu__list">
-          <li class="footer-menu__item">
-            <a href="" class="footer-menu__link">Product</a>
-          </li>
-          <li class="footer-menu__item">
-            <a href="" class="footer-menu__link">Pricing Plans</a>
-          </li>
-          <li class="footer-menu__item">
-            <a href="" class="footer-menu__link">FAQ</a>
-          </li>
-          <li class="footer-menu__item">
-            <a href="" class="footer-menu__link">Blog</a>
-          </li>
-        </ul>
-        <div class="footer-menu__links">
-          <a href="/">
-            <img
-              class="footer-menu__link-icon"
-              width="10"
-              height="20"
-              src="./assets/icons/Facebook.svg"
-              alt="facebook" />
-          </a>
-          <a href="/">
-            <img class="footer-menu__link-icon" width="25" height="20" src="./assets/icons/Twitter.svg" alt="twitter" />
-          </a>
-          <a href="/">
-            <img
-              class="footer-menu__link-icon"
-              width="21"
-              height="20"
-              src="./assets/icons/Instagram.svg"
-              alt="instagram" />
-          </a>
+
+        <div class="advantages__item">
+          <div class="advantages__img-container">
+            <img class="advantages__img" src="./assets/img/img1.jpg" alt="#" />
+            <div class="btn-container">
+              <div class="btn-contact btn-connect">
+                <button>
+                  <span> Связаться с нами </span>
+                  <img src="./assets/icons/arrow.svg" alt="arrow" />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="advantages__desk">
+            <div class="advantages__title"><h3>Lorem Ipsum</h3></div>
+            <div class="advantages__def">
+              Lorem Ipsum Есть много вариантов Lorem Ipsum, но большинство из
+              них имеет не всегда приемлемые модификации, например,
+              юмористические вставки или слова, которые даже отдалённо не
+              напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного
+              проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в
+              середине абзаца. Также все другие известные генераторы Lorem Ipsum
+              используют один и тот же текст, который они просто повторяют, пока
+              не достигнут нужный объём. Это делает предлагаемый здесь генератор
+              единственным настоящим Lorem Ipsum генератором. Он использует
+              словарь из более чем 200 латинских слов, а также набор моделей
+              предложений. В результате сгенерированный Lorem Ipsum выглядит
+              правдоподобно, не имеет повторяющихся абзацей или "невозможных"
+              слов.
+            </div>
+          </div>
+        </div>
+        <div class="advantages__item advantages__item--reverse">
+          <div class="advantages__img-container">
+            <img class="advantages__img" src="./assets/img/img2.jpg" alt="#" />
+            <div class="btn-container">
+              <div class="btn-contact btn-connect">
+                <button>
+                  <span> Связаться с нами </span>
+                  <img src="./assets/icons/arrow.svg" alt="arrow" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="advantages__desk">
+            <div class="advantages__title"><h3>Lorem Ipsum</h3></div>
+            <div class="advantages__def">
+              Есть много вариантов Lorem Ipsum, но большинство из них имеет не
+              всегда приемлемые модификации, например, юмористические вставки
+              или слова, которые даже отдалённо не напоминают латынь. Если вам
+              нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
+              какой-нибудь шутки, скрытой в середине абзаца. Также все другие
+              известные генераторы Lorem Ipsum используют один и тот же текст,
+              который они просто повторяют, пока не достигнут нужный объём. Это
+              делает предлагаемый здесь генератор единственным настоящим Lorem
+              Ipsum генератором. Он использует словарь из более чем 200
+              латинских слов, а также набор моделей предложений. В результате
+              сгенерированный Lorem Ipsum выглядит правдоподобно, не имеет
+              повторяющихся абзацей или "невозможных" слов.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="wrap">
+        <div class="features__container">
+          <div class="features__title">
+            <h2>SN</h2>
+          </div>
+          <p class="features__desk">
+            Есть много вариантов Lorem Ipsum, но большинство из них имеет не
+            всегда приемлемые модификации, например, юмористические вставки или
+            слова, которые даже отдалённо не напоминают латынь. Если вам нужен
+            Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
+            какой-нибудь шутки, скрытой в середине абзаца.
+          </p>
+          <div class="btn-container">
+            <div class="btn-contact btn-connect">
+              <button>
+                <span> Подробнее </span>
+                <img src="./assets/icons/arrow.svg" alt="arrow" />
+              </button>
+            </div>
+            <div class="white-line"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="wrap">
+        <div class="contact__container">
+          <div class="contact__info">
+            <div class="contact__title">
+              <h3>Мы реализуем под ключ проекты любой сложности</h3>
+            </div>
+            <button class="contact__btn btn-connect">
+              <span>Оставить заявку</span>
+              <img src="./assets/icons/arrow.svg" alt="arrow" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer__nav">
+          <div class="footer__heading">
+            <h4>Товары</h4>
+            <h5>Флотомашины и чаны</h5>
+            <ul class="footer__list footer__list--pad">
+              <li class="footer__item">
+                <a href="#" class="footer__link">МП</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">ЧП</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">ЧКЗ</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Нестандратное lorem</a>
+              </li>
+            </ul>
+            <h5>Автоматизация</h5>
+            <ul class="footer__list footer__list--pad">
+              <li class="footer__item">Локальные АСУ</li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">РУB</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">SD</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">SC</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">SK</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">SP</a>
+              </li>
+              <li class="footer__item">АСУТП</li>
+            </ul>
+            <h5>Интеллектуальные системы</h5>
+            <ul class="footer__list footer__list--red">
+              <li class="footer__item">
+                <a href="#" class="footer__link">SN</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">SV</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">SP</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__heading">
+            <h4>Услуги</h4>
+            <div class="padding"></div>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link"
+                  >Технологические исследования и аудит</a
+                >
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Проектирование</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link"
+                  >Строительно-монтажные работы</a
+                >
+              </li>
+            </ul>
+
+            <h5>Сервисное сопровождение</h5>
+            <ul class="footer__list footer__list--pad">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Сервис</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Технологическая поддержка</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__heading">
+            <h4>Компания</h4>
+            <div class="padding"></div>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Новости и события</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Проекты</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Карьера</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Отзывы заказчиков</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Документы</a>
+              </li>
+            </ul>
+
+            <h5>Контакты</h5>
+          </div>
+
+          <div class="footer__adress">
+            <span class="footer__adress-info"
+              ><img
+                class="footer__loc"
+                src="./assets/icons/location.svg"
+                alt="location"
+                width="27"
+                height="37"
+              />Санкт-Петербург, улица Чапаева, 5</span
+            >
+
+            <div class="footer__contacts">
+              <span class="footer__adress-number">+7 (---) 5-5-05-11</span>
+              <span class="footer__adress-email">info@info.ru</span>
+            </div>
+            <button class="contact__btn btn-connect">
+              <span>Оставить заявку</span>
+              <img src="./assets/icons/arrow.svg" alt="arrow" />
+            </button>
+          </div>
+        </div>
+        <div class="footer__bureau">
+          Сделано в <span>Creative Mind Bureau</span>
         </div>
       </div>
     </footer>

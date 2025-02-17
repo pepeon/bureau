@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Analytics</title>
+    <script src="./js/index.js" defer></script>
+  </head>
+  <body class="container">
+    <div class="overlay"></div>
+    <div class="form-container">
+      <form class="form">
+        <button class="form__close-btn btn-connect">
+          <img src="./assets/icons/close.svg" alt="close" />
+        </button>
+        <h2>
+          Успех начинается с правильных решений. Оставьте здесь свои контакты, и
+          мы свяжемся с вами, чтобы предложить оптимальную технологию по
+          увеличению процента извлекаемости полезного в конечный продукт на
+          вашем предприятии.
+        </h2>
+        <input
+          type="text"
+          class="form__name"
+          name="name"
+          required
+          placeholder="Имя*"
+        />
+
+        <input
+          type="email"
+          class="form__email"
+          name="email"
+          required
+          placeholder="E-Mail*"
+        />
+
+        <input
+          type="number"
+          class="form__phone"
+          name="phone"
+          required
+          placeholder="Телефон*"
+        />
+
+        <textarea
+          class="form__project"
+          name="project"
+          autocapitalize="off"
+          autocorrect="off"
+          required
+          placeholder="Описание проекта*"
+        ></textarea>
+        <div class="form__file">
+          <img class="form__doc" src="./assets/icons/doc.svg" alt="doc" />
+          <span class="file-info">Приложить Файлы (До Трех Файлов)</span>
+          <input class="form_input-file" multiple type="file" name="file" />
+          <span class="input-file-btn"></span>
+          <button class="file-upload">
+            <img src="./assets/icons/file.svg" alt="file" />
+          </button>
+        </div>
+
+        <p class="privacy-policy">
+          Отправляя эту форму, я принимаю
+          <span>политику конфиденциальности</span> этого сайта.
+        </p>
+
+        <button class="contact__btn form__btn">
+          <span>Отправить</span>
+          <img src="./assets/icons/arrow.svg" alt="arrow" />
+        </button>
+      </form>
+    </div>
+    <section class="intro">
+      <div class="wrap">
+        <header class="header">
+          <div class="burger__menu">
+            <ul class="burger__list">
+              <li class="header__item">
+                <a href="#" class="header__link"> Товары </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link"> Услуги </a>
+              </li>
+
+              <li class="header__item">
+                <a href="#" class="header__link"> Компания </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link"> Контакты </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link"> EN </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header__logo">
+            <a href="./index.html">LOGO</a>
+          </div>
+
+          <div class="header__right">
+            <ul class="header__list">
+              <li class="header__item">
+                <div class="plug"></div>
+                <a class="header__link" href="#">Товары</a>
+
+                <ul class="header__submenu">
+                  <li class="header__submenu-item">
+                    <a class="header__submenu-link" href="#"
+                      >Флотомашины и чаны</a
+                    >
+                  </li>
+
+                  <li class="header__submenu-item">
+                    <a class="header__submenu-link" href="#">Автоматизация</a>
+                  </li>
+                  <li class="header__submenu-item">
+                    <a class="header__submenu-link link--red" href="#"
+                      ><span>SN</span></a
+                    >
+                  </li>
+                  <div class="gray-line"></div>
+                </ul>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Услуги</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Компания</a>
+              </li>
+            </ul>
+            <div class="header__links">
+              <button class="header__link-btn btn-connect">
+                Оставить заявку
+              </button>
+              <div class="header__link-item">Контакты</div>
+              <a class="header__link-search">
+                <img
+                  src="./assets/icons/search.svg"
+                  width="12"
+                  height="12"
+                  alt="search-logo"
+                />
+              </a>
+              <a class="header__link-lang" href="#">EN</a>
+              <div class="header__burger">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </section>
+    <section class="main">
+      <img src="./assets/img/img4.jpg" width="200" alt="nothing" />
+      <h2>Ничего не найдено</h2>
+    </section>
+
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer__nav">
+          <div class="footer__heading">
+            <h4>Товары</h4>
+            <h5>Флотомашины и чаны</h5>
+            <ul class="footer__list footer__list--pad">
+              <li class="footer__item">
+                <a href="#" class="footer__link">МП</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">ЧП</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">ЧКЗ</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Нестандратное lorem</a>
+              </li>
+            </ul>
+            <h5>Автоматизация</h5>
+            <ul class="footer__list footer__list--pad">
+              <li class="footer__item">Локальные АСУ</li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">РУB</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">SD</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">SC</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">SK</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">SP</a>
+              </li>
+              <li class="footer__item">АСУТП</li>
+            </ul>
+            <h5>Интеллектуальные системы</h5>
+            <ul class="footer__list footer__list--red">
+              <li class="footer__item">
+                <a href="#" class="footer__link">SN</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">SV</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">SP</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__heading">
+            <h4>Услуги</h4>
+            <div class="padding"></div>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link"
+                  >Технологические исследования и аудит</a
+                >
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Проектирование</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link"
+                  >Строительно-монтажные работы</a
+                >
+              </li>
+            </ul>
+
+            <h5>Сервисное сопровождение</h5>
+            <ul class="footer__list footer__list--pad">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Сервис</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Технологическая поддержка</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__heading">
+            <h4>Компания</h4>
+            <div class="padding"></div>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Новости и события</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Проекты</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Карьера</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Отзывы заказчиков</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Документы</a>
+              </li>
+            </ul>
+
+            <h5>Контакты</h5>
+          </div>
+
+          <div class="footer__adress">
+            <span class="footer__adress-info"
+              ><img
+                class="footer__loc"
+                src="./assets/icons/location.svg"
+                alt="location"
+                width="27"
+                height="37"
+              />Санкт-Петербург, улица Чапаева, 5</span
+            >
+
+            <div class="footer__contacts">
+              <span class="footer__adress-number">+7 (---) 5-5-05-11</span>
+              <span class="footer__adress-email">info@info.ru</span>
+            </div>
+            <button class="contact__btn btn-connect">
+              <span>Оставить заявку</span>
+              <img src="./assets/icons/arrow.svg" alt="arrow" />
+            </button>
+          </div>
+        </div>
+        <div class="footer__bureau">
+          Сделано в <span>Creative Mind Bureau</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+.footer {
+  margin-top: 130px;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__nav {
+  border-top: 4px solid #ebe8e5;
+  padding-top: 90px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+
+  .footer__heading {
+    max-width: 200px;
+    flex: 1;
+  }
+
+  .footer__list--pad {
+    li {
+      padding-left: 14px;
+    }
+  }
+  h4 {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #311311;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #d3c8bb;
+  }
+  .padding {
+    padding-bottom: 20px;
+  }
+  h5 {
+    padding-top: 20px;
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #311311;
+    padding-bottom: 13px;
+  }
+  .footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    a {
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: #4f4235;
+      }
+    }
+
+    a {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 126%;
+      color: #aa927a;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  .footer__adress {
+    max-width: 406px;
+    flex: 1;
+    height: 369px;
+    min-width: none;
+    background: #f2f2f2;
+    padding: 43px 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #311311;
+
+    .footer__adress-info {
+      position: relative;
+      font-family: var(--font-family);
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 126%;
+      color: #311311;
+    }
+    .footer__loc {
+      display: block;
+      position: absolute;
+      height: 25px;
+      top: 0;
+      left: -30px;
+    }
+    .footer__adress-number {
+      font-weight: 600;
+    }
+  }
+
+  .footer__list--red {
+    a:hover {
+      background: #b21f24;
+      padding: 1px 10px;
+      color: #fff;
+    }
+  }
+}
+.footer__bureau {
+  padding-top: 200px;
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 126%;
+  padding-bottom: 17px;
+  color: #614d49;
+  span {
+    color: #b21f24;
+  }
+}

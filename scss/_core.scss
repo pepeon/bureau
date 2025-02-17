@@ -1,31 +1,17 @@
-/*Basic style*/
-
 body {
-  font-family: 'Roboto', sans-serif;
-  background: $light-gray;
-}
-
-.container {
-  @include min-max(320px, 100%);
+  font-family: "PF Din Text Comp Pro";
+  box-sizing: border-box;
 }
 
 .wrap {
-  @include min-max(320px, 1180px);
-}
-
-p,
-a,
-button {
-  color: $gray;
+  max-width: 1628px;
+  margin: 0 auto;
+  padding: 0 36px;
+  overflow: hidden;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-html,
-body {
-  overflow-x: hidden;
 }
